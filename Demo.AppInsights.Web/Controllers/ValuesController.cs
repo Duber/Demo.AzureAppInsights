@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.ApplicationInsights;
+using Microsoft.ApplicationInsights.DataContracts;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Demo.AppInsights.Web.Controllers
@@ -13,6 +15,11 @@ namespace Demo.AppInsights.Web.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
+            TelemetryClient telemetryClient = new TelemetryClient();
+            telemetryClient.InstrumentationKey = "aeeb5550-01a6-4a08-ac43-d8127ebdf430";
+            telemetryClient.TrackTrace("Some info log", SeverityLevel.Information);
+            telemetryClient.TrackException(new Exception("Mission fail"));
+            telemetryClient.Flush();
             return new string[] { "value1", "value2" };
         }
 

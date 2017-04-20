@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.ApplicationInsights;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -27,6 +28,8 @@ namespace Demo.AppInsights.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddApplicationInsightsTelemetry(Configuration.GetSection("ApplicationInsights").GetValue("InstrumentationKey", string.Empty));
+
             // Add framework services.
             services.AddMvc();
         }
@@ -35,6 +38,7 @@ namespace Demo.AppInsights.Web
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+            loggerFactory.AddApplicationInsights(app.ApplicationServices, LogLevel.Information);
             loggerFactory.AddDebug();
 
             app.UseMvc();
