@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.0.0
 MinimumVisualStudioVersion = 10.0.0.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.AppInsights.Web", "Demo.AppInsights.Web/Demo.AppInsights.Web.csproj", "{009ACF7C-464A-4A76-A9FD-2E23470F7529}"
 EndProject
+Project("{00833BA5-EF5D-4599-AB2B-845D0F2BAAC6}") = "Demo.AppInsights.Log", "Demo.AppInsights.Log\Demo.AppInsights.Log.csproj", "{AA7CD43E-69C1-44A3-A895-601F4325D154}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{009ACF7C-464A-4A76-A9FD-2E23470F7529}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{009ACF7C-464A-4A76-A9FD-2E23470F7529}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{009ACF7C-464A-4A76-A9FD-2E23470F7529}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA7CD43E-69C1-44A3-A895-601F4325D154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA7CD43E-69C1-44A3-A895-601F4325D154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA7CD43E-69C1-44A3-A895-601F4325D154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA7CD43E-69C1-44A3-A895-601F4325D154}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
