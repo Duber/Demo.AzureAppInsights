@@ -1,0 +1,8 @@
+/Users/duber/workspace/Demo.AppInsights/Demo.AppInsights.Web/bin/Debug/netcoreapp1.1/Demo.AppInsights.Web.deps.json
+/Users/duber/workspace/Demo.AppInsights/Demo.AppInsights.Web/bin/Debug/netcoreapp1.1/Demo.AppInsights.Web.runtimeconfig.json
+/Users/duber/workspace/Demo.AppInsights/Demo.AppInsights.Web/bin/Debug/netcoreapp1.1/Demo.AppInsights.Web.runtimeconfig.dev.json
+/Users/duber/workspace/Demo.AppInsights/Demo.AppInsights.Web/bin/Debug/netcoreapp1.1/Demo.AppInsights.Web.dll
+/Users/duber/workspace/Demo.AppInsights/Demo.AppInsights.Web/bin/Debug/netcoreapp1.1/Demo.AppInsights.Web.pdb
+/Users/duber/workspace/Demo.AppInsights/Demo.AppInsights.Web/obj/Debug/netcoreapp1.1/Demo.AppInsights.Web.AssemblyInfo.cs
+/Users/duber/workspace/Demo.AppInsights/Demo.AppInsights.Web/obj/Debug/netcoreapp1.1/Demo.AppInsights.Web.dll
+/Users/duber/workspace/Demo.AppInsights/Demo.AppInsights.Web/obj/Debug/netcoreapp1.1/Demo.AppInsights.Web.pdb
