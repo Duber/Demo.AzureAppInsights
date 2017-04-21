@@ -21,6 +21,7 @@ namespace Demo.AppInsights.Log
             if (exception != null)
             {
                 _telemetryClient.TrackException(exception);
+                _telemetryClient.Flush();
                 return;
             }
             var message = formatter(state, null);
